@@ -1,0 +1,44 @@
+# ai-native-sdlc-skills
+
+Agent skills for running an AI-native software lifecycle: capture intent before code,
+name the gaps honestly, and leave a trail any engineer (or coding assistant) can support.
+
+Works with any agent that reads Agent Skills: Claude Code, Kiro, GitHub Copilot, Cursor,
+Codex and others.
+
+## Install
+
+```bash
+# all skills, for every agent on this machine
+npx skills add sanjeevkumarraob/ai-native-sdlc-skills -g
+
+# just one skill, into the current project
+npx skills add sanjeevkumarraob/ai-native-sdlc-skills --skill ai-native-kickoff
+```
+
+## Skills
+
+| Skill | Use it when | Produces |
+|-------|-------------|----------|
+| `ai-native-kickoff` | Before any new app, feature, prototype or bridge tool | `intent.md`, `spec.md`, `plan.md`, `known-gaps.md`, `CLAUDE.md`, `AGENTS.md`, `REVIEW.md`, `RUNBOOK.md` |
+
+Then ask your agent: *"Kick off a new project: <one line about it>."*
+
+## Why
+
+Spec-driven tools (Spec Kit, Kiro, kspec) start at the spec. Teams usually push back on
+AI-built work for reasons that sit *before* the spec: who owns it, who supports it at
+2am, does it clash with another team's roadmap, when does it retire, and what is still
+prototype-grade. This skill makes those answers the first artifact.
+
+Using kspec with Kiro? The skill detects `.kiro/` and hands spec, design and tasks to
+kspec, keeping intent, known gaps and handover context for itself.
+
+## Credits
+
+Process follows Anthropic's
+[AI-native SDLC playbook](https://claude.com/resources/articles/the-ai-native-sdlc-playbook).
+
+## License
+
+MIT
