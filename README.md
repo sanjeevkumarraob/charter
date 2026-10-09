@@ -24,6 +24,18 @@ npx skills add sanjeevkumarraob/ai-native-sdlc-skills --skill kickoff
 
 Then run `/kickoff <one line about the work>`, or just ask your agent to "kick off" a new project.
 
+## Works with Addy Osmani's agent-skills
+
+`kickoff` covers what comes before and around the code: intent, ownership, sunset,
+known gaps, handover and decisions. For build quality it hands off to
+[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) when installed
+(`interview-me`, `spec-driven-development`, `constraint-driven-development`,
+`code-review-and-quality` and others), and falls back to its own steps when not.
+
+```bash
+npx skills add addyosmani/agent-skills -g
+```
+
 ## Why
 
 Spec-driven tools (Spec Kit, Kiro, kspec) start at the spec. Teams usually push back on
