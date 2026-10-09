@@ -1,9 +1,9 @@
 ---
-name: ai-native-kickoff
+name: kickoff
 description: Use before starting any new app, feature, prototype or bridge tool, at work or on a personal project, to set up an AI-native SDLC trail before code is written - intent, spec, plan, known gaps, agent context (CLAUDE.md, AGENTS.md), review rules and a runbook. Keywords - kickoff, intent.md, spec-driven, plan mode, handover, known gaps, vibe coding, AI SDLC.
 ---
 
-# AI-native kickoff
+# Kickoff
 
 Goal: before any code is written, produce a committed artifact trail that makes AI-built
 work traceable, reviewable and supportable by someone who was not in the room. The trail

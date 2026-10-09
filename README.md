@@ -13,16 +13,16 @@ Codex and others.
 npx skills add sanjeevkumarraob/ai-native-sdlc-skills -g
 
 # just one skill, into the current project
-npx skills add sanjeevkumarraob/ai-native-sdlc-skills --skill ai-native-kickoff
+npx skills add sanjeevkumarraob/ai-native-sdlc-skills --skill kickoff
 ```
 
 ## Skills
 
 | Skill | Use it when | Produces |
 |-------|-------------|----------|
-| `ai-native-kickoff` | Before any new app, feature, prototype or bridge tool | `intent.md`, `spec.md`, `plan.md`, `known-gaps.md`, `CLAUDE.md`, `AGENTS.md`, `REVIEW.md`, `RUNBOOK.md` |
+| `kickoff` | Before any new app, feature, prototype or bridge tool | `intent.md`, `spec.md`, `plan.md`, `known-gaps.md`, `CLAUDE.md`, `AGENTS.md`, `REVIEW.md`, `RUNBOOK.md` |
 
-Then ask your agent: *"Kick off a new project: <one line about it>."*
+Then run `/kickoff <one line about the work>`, or just ask your agent to "kick off" a new project.
 
 ## Why
 
