@@ -1,6 +1,6 @@
 ---
 name: kickoff
-description: Use before starting any new app, feature, prototype or bridge tool, at work or on a personal project, to set up an AI-native SDLC trail before code is written - intent, spec, plan, known gaps, agent context (CLAUDE.md, AGENTS.md), review rules and a runbook. Keywords - kickoff, intent.md, spec-driven, plan mode, handover, known gaps, vibe coding, AI SDLC.
+description: Use before starting something new - a new app, service, prototype or bridge tool, at work or on a personal project - to set up an AI-native SDLC trail before code is written - intent, spec, plan, known gaps, agent context (CLAUDE.md, AGENTS.md), review rules and a runbook. For changes to an existing codebase use the change skill instead. Keywords - kickoff, greenfield, new project, intent.md, spec-driven, plan mode, handover, known gaps, vibe coding, AI SDLC.
 ---
 
 # Kickoff
@@ -20,6 +20,10 @@ which ones are available in Gate 0 and fall back to the built-in steps for any t
 missing. Never copy a companion skill's content into this one.
 
 ## Gate 0 - Detect context
+
+0. If the request is a change to code that already exists (a feature, fix or refactor
+   in an existing repo), stop and use the `change` skill instead. `kickoff` is for new
+   apps, services, prototypes and bridge tools.
 
 1. Look for existing structure: `CLAUDE.md`, `AGENTS.md`, `.kiro/`, `specs/`, `docs/`,
    ADR folders, `.github/`. Reuse what exists; never add a parallel structure.

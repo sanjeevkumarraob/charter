@@ -20,17 +20,29 @@ npx skills add sanjeevkumarraob/ai-native-sdlc-skills --skill kickoff
 
 | Skill | Use it when | Produces |
 |-------|-------------|----------|
-| `kickoff` | Before any new app, feature, prototype or bridge tool | `intent.md`, `spec.md`, `plan.md`, `known-gaps.md`, `CLAUDE.md`, `AGENTS.md`, `REVIEW.md`, `RUNBOOK.md` |
+| `kickoff` | Starting something new: an app, service, prototype or bridge tool | `intent.md`, `spec.md`, `plan.md`, `known-gaps.md`, `CLAUDE.md`, `AGENTS.md`, `REVIEW.md`, `RUNBOOK.md` |
+| `change` | Changing an existing codebase: feature, fix, refactor, migration | `codebase-map.md` (grows per change), `change.md`, characterization tests, PR description, area specs |
 
-Then run `/kickoff <one line about the work>`, or just ask your agent to "kick off" a new project.
+Run `/kickoff <one line about the new thing>` or `/change <ticket or one line about the change>`.
+
+### Which one?
+
+- **No code yet** → `kickoff`. Intent, ownership and sunset come first.
+- **Code exists** → `change`. It sizes each change by risk first, so a typo fix gets no
+  paperwork and a schema change gets all of it. It grows a codebase map one change at a
+  time, naming exemplar files so agents copy how the codebase already works instead of
+  inventing new ways. It pins current behaviour with tests before touching anything, and
+  writes a PR description reviewers can check the diff against. Steps that change no
+  behaviour run unattended; anything that does waits for approval.
 
 ## Works with Addy Osmani's agent-skills
 
-`kickoff` covers what comes before and around the code: intent, ownership, sunset,
-known gaps, handover and decisions. For build quality it hands off to
+`kickoff` and `change` cover what comes before and around the code: intent, ownership,
+blast radius, known gaps, handover and decisions. For build quality they hand off to
 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) when installed
 (`interview-me`, `spec-driven-development`, `constraint-driven-development`,
-`code-review-and-quality` and others), and falls back to its own steps when not.
+`code-review-and-quality`, `debugging-and-error-recovery`, `deprecation-and-migration`
+and others), and fall back to their own steps when not.
 
 ```bash
 npx skills add addyosmani/agent-skills -g
