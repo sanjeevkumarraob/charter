@@ -1,5 +1,7 @@
 # charter
 
+> Write the charter before the code: intent, ownership and gaps for AI-built software.
+
 Agent skills for running an AI-native software lifecycle: capture intent before code,
 name the gaps honestly, and leave a trail any engineer (or coding assistant) can support.
 
