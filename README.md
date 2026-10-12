@@ -1,4 +1,4 @@
-# ai-native-sdlc-skills
+# ant — AI Native Team
 
 Agent skills for running an AI-native software lifecycle: capture intent before code,
 name the gaps honestly, and leave a trail any engineer (or coding assistant) can support.
@@ -10,10 +10,10 @@ Codex and others.
 
 ```bash
 # all skills, for every agent on this machine
-npx skills add sanjeevkumarraob/ai-native-sdlc-skills -g
+npx skills add sanjeevkumarraob/ant -g
 
 # just one skill, into the current project
-npx skills add sanjeevkumarraob/ai-native-sdlc-skills --skill kickoff
+npx skills add sanjeevkumarraob/ant --skill kickoff
 ```
 
 ## Skills
