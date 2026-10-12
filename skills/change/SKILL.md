@@ -29,7 +29,13 @@ prototypes with no existing code, use the `kickoff` skill instead.
 | Area specs | `docs/specs/<area>.md` |
 
 If kspec manages the repo, still use these paths and link `change.md` from the kspec
-spec folder. Reuse an existing docs or ADR folder if the repo already has one.
+spec folder.
+
+**The repo's own conventions win.** If it already has a decision log, roadmap, spec,
+PR template, or a review gate written in `CLAUDE.md` / `AGENTS.md`, use those instead
+of creating parallel files, and follow the repo's instructions wherever they differ
+from this skill. For example, a repo-mandated adversarial review replaces the generic
+one in Step 7, and an existing `DECISIONS.md` replaces `docs/sdlc/decisions.md`.
 
 ## When nobody can answer
 
