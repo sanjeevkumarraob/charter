@@ -1,4 +1,4 @@
-# ant — AI Native Team
+# charter
 
 Agent skills for running an AI-native software lifecycle: capture intent before code,
 name the gaps honestly, and leave a trail any engineer (or coding assistant) can support.
@@ -10,10 +10,10 @@ Codex and others.
 
 ```bash
 # all skills, for every agent on this machine
-npx skills add sanjeevkumarraob/ant -g
+npx skills add sanjeevkumarraob/charter -g
 
 # just one skill, into the current project
-npx skills add sanjeevkumarraob/ant --skill kickoff
+npx skills add sanjeevkumarraob/charter --skill kickoff
 ```
 
 ## Skills
